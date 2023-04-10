@@ -1,0 +1,73 @@
+body{
+    background-color: white;
+}
+h2{
+    padding-top: 4%;
+    text-align: center;
+}
+.form{
+
+      background-color: #F0F0F0;
+      height:auto;
+      width:605;
+      margin:5% 20% 0 20%;
+      border-radius: 10%;
+    
+}
+.stu_reg{
+margin-top: 5%;
+    margin-left: 27%;
+    display:block;
+}
+#mem2, #mem3{
+    margin-top: 5%;
+        margin-left: 27%;
+        display:none;
+    }
+input{
+    height:30px;
+    width:220px;
+    margin-top: 5px;
+}
+
+button{
+  margin-top:10%;
+    height:40px;
+    width:40px;
+    font-size: 36px;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+}
+button:hover{
+    color: white;
+    background-color: gray;
+}
+.project_details{
+      
+    margin-top: 5%;
+    margin-left: 27%;
+}
+textarea{
+   height:50px;
+   width:224px;
+
+}
+#btn{
+    margin-top: 5%;
+    margin-left: 32%;
+    height:40px;
+    width:320px;
+    font-size: 24px;
+    border-radius:10px;
+    color:green;
+    background-image: linear-gradient(white,lightgray);
+}
+#btn:hover{
+    background-image: linear-gradient(lightgray,white);
+}
+p{
+    text-align:center;
+    color:red;
+    font-size:16px;
+}

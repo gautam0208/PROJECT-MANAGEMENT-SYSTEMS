@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+
+       </style>
+    </head>
+    <body>
+      <div id="stu_reg">
+        <p id="error"></p></td>
+        <h3 style="color:green;">Team Member 1</h3>
+            <table>
+                <tr>
+                    <td id="text">REGISTRATION NUMBER:</td>   <td><input type="text" id="rno" name="rno1" onchange="func_rno()" placeholder="ex.20BCE2926" >
+                      
+                 </tr> 
+
+                 <tr>
+                     <td id="text">FIRST NAME:</td><td><input type="text" id="fname" name="fname1" onchange="func_fname()" >
+                                             
+                 </tr>
+
+                 <tr>
+                     <td id="text"> Phone Number:</td><td><input type="tel" name="phonenum1" id="phnum" placeholder="+91...." onchange="func_phno()"  >
+                  
+                 </tr>
+
+                 <tr>
+                 <td id="text">Gmail:</td><td><input type="gmail" name="gmail1" id="gmail" onchange="func_gmail()" placeholder="test@gmail.com" >
+                   
+                 </tr>
+
+         </table>
+        
+     </div>
+     <button id="add-team-member" onclick="addMember()" >+</button>
+     <label style="color:green;"> ADD NEW MEMBER</label>
+    </body>
+</html>
+<script>
+    function addMember(){
+      console.log("clicked!!");
+           var x=document.getElementById("stu_reg");
+           console.log(x.style.display);
+           if (x.style.display == "none" || x.style.display == "")
+               x.style.display='block';
+           else
+               x.style.display='none';
+
+    }
+
+  </script>

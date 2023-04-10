@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+     <link rel="stylesheet" href="stu_reg.css" >
+    </head>
+    <body >
+        <form action="stu_reg.php" method="post" class="form" enctype="multipart/form-data">
+                <h2>Project Registration System</h2>
+
+              
+                  <div class="stu_reg" id="mem1">
+                    <p id="error"></p></td>
+                    <h3 style="color:green;">Team Member 1</h3>
+                        <table>
+                            <tr>
+                                <td id="text">REGISTRATION NUMBER:</td>   <td><input type="text" id="rno1" name="rno1" onchange="func_rno1()" placeholder="ex.20BCE2926" >
+                                  
+                             </tr> 
+    
+                             <tr>
+                                 <td id="text">FIRST NAME:</td><td><input type="text" id="fname1" name="fname1" onchange="func_fname1()" >
+                                                         
+                             </tr>
+    
+                             <tr>
+                                 <td id="text"> Phone Number:</td><td><input type="tel" name="phonenum1" id="phnum1" placeholder="+91...." onchange="func_phno1()"  >
+                              
+                             </tr>
+    
+                             <tr>
+                             <td id="text">Gmail:</td><td><input type="gmail" name="gmail1" id="gmail1" onchange="func_gmail1()" placeholder="test@gmail.com" >
+                               
+                             </tr>
+    
+                     </table>
+
+                       <div id="btn1">
+                        <button id="add1" onclick="addMember1()" >+</button>
+                       
+                       </div>
+                     
+                 </div>   
+                <div id="mem2" >
+                    <h3 style="color:green;">Team Member 2</h3>
+                    <table>
+                        <tr>
+                            <td id="text">REGISTRATION NUMBER:</td>   <td><input type="text" id="rno2" name="rno2" onchange="func_rno2()" placeholder="ex.20BCE2926" >
+                              
+                         </tr> 
+   
+                         <tr>
+                             <td id="text">FIRST NAME:</td><td><input type="text" id="fname2" name="fname2" onchange="func_fname2()" >
+                                                     
+                         </tr>
+   
+                         <tr>
+                             <td id="text"> Phone Number:</td><td><input type="tel" name="phonenum2" id="phnum2" placeholder="+91...." onchange="func_phno2()"  >
+                          
+                         </tr>
+   
+                         <tr>
+                         <td id="text">Gmail:</td><td><input type="gmail" name="gmail2" id="gmail2" onchange="func_gmail2()" placeholder="test@gmail.com" >
+                           
+                         </tr>
+   
+                 </table>
+                 <div id="btn2">
+                    <button id="add2" onclick="addMember2()" >+</button>
+                 
+                 <button id="remove2" onclick="removeMember2()" >-</button>
+                 
+                   </div>
+                
+                </div>
+                
+                 <div id="mem3" >
+                    <h3 style="color:green;">Team Member 3</h3>
+                    <table>
+                        <tr>
+                            <td id="text">REGISTRATION NUMBER:</td>   <td><input type="text" id="rno3" name="rno3" onchange="func_rno3()" placeholder="ex.20BCE2926" >
+                              
+                         </tr> 
+
+                         <tr>
+                             <td id="text">FIRST NAME:</td><td><input type="text" id="fname3" name="fname3" onchange="func_fname3()" >
+                                                     
+                         </tr>
+
+                         <tr>
+                             <td id="text"> Phone Number:</td><td><input type="tel" name="phonenum3" id="phnum3" placeholder="+91...." onchange="func_phno3()"  >
+                          
+                         </tr>
+
+                         <tr>
+                         <td id="text">Gmail:</td><td><input type="gmail" name="gmail3" id="gmail3" onchange="func_gmail3()" placeholder="test@gmail.com" >
+                           
+                         </tr>
+
+                 </table>
+
+                 <div id="btn3">
+                
+                 <button id="remove3" onclick="removeMember3()" >-</button>
+                 
+                   </div>
+                 </div>
+
+
+                   <div class="project_details">
+                     
+                           <h2>PROJECT DETAILS</h2>
+
+                           <table>
+                              <tr>
+                                 <td>Project Title:</td><td><input type="text" id="p_title" name="p_title"></td>
+                              </tr>
+                              <tr>
+                                <td>Project Abstract:</td><td><textarea id="p_abstract" name="p_abstract"></textarea></td>
+                             </tr>
+                             <tr>
+                                <td>Project Functionalities</td><td><textarea id="p_func" name="p_func"></textarea></td>
+                             </tr>
+                             <tr>
+                                <td>Resource Required(Hardware & Software):</td><td><textarea id="res_req" name="res_req"></textarea></td>
+                             </tr>
+                             <tr>
+                                <td>Data Models:</td><td> <input type="file" name="data" id="data" required> </td>
+                             </tr>
+                           </table>
+                   </div>
+
+                   <input id="btn" type="submit" name="submit" value="SUBMIT">
+        </form>
+
+           
+       
+    </body>
+</html>
+<script src="stu_reg.js">
+
+</script>
